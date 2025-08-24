@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@font-face { 
+  font-family: "yekan-regular"; 
+  src: url("../public/font/iranyekanmobile_regular.ttf");
+}
+
+@font-face { 
+  font-family: "yekan-black"; 
+  src: url("../public/font/iranyekanmobile_black.ttf");
+}
+
+@theme {  
+  --color-gray-20: #f1f3f5;  
+  --color-gray-50: #adb5bd;  
+  --color-gray-100: #495057;
+  --color-gray-200: #212529;
+  --color-primary-200: #ffdeeb;
+  --color-primary-300: #fcc2d7;
+  --color-primary-400: #f06595;
+  --color-primary-500: #d6336c;
+  --color-primary-600: #85183e;
+  --color-secondary-400: #339af0;
+  --color-secondary-500: #1971c2;
+
+  --font-family-yekan-regular: "yekan-regular", sans-serif;
+  --font-family-yekan-black: "yekan-black", sans-serif;
+
+  --screens-xs: 480px;  
+  --screens-sm: 768px;  
+  /* --screens-laptop: 64rem;   */
+  --screens-md: 1060rem;
+
+  --herotextbefore: url('./assets/hero-text-before.png');
+  --benefitwavesbefore: url('./assets/waves-before.png');
+  --benefitsparklesbefore: url('./assets/sparkles-before.png');
+
+  /* --font-yekan-regular: url(../public/font/iranyekanmobile_regular.ttf) format("woff2");
+  --font-yekan-bold: url(../public/font/iranyekanmobile_bold.ttf) format("woff2"); */
+}
+
+html,
+body,
+#root
+.app {
+  height: 100%;
+  width: 100%;
+  @apply font-family-yekan-regular;
+  @apply text-primary-500;
+  @apply bg-indigo-50;
+}
+
+p{
+  font-size: 18px;
+}
